@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#93D7D7"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#93D7D7"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="57dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#93D7D7"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Trending"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="176dp"
+        android:layout_height="252dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/image_1" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="165dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:srcCompat="@drawable/image_2" />
+
+    <ImageButton
+        android:contentDescription="Love is Hard for Otaku"
+        android:id="@+id/imageButton3"
+        android:layout_width="176dp"
+        android:layout_height="265dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/image_4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="M"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigations"
+        android:background="@drawable/roundcorner"
+        app:itemRippleColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="244dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter a Title"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
